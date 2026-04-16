@@ -1,0 +1,95 @@
+/* media.css */
+
+/* --- 1024px gacha bo'lgan ekranlar (Planshetlar) --- */
+@media (max-width: 1024px) {
+    .nav_links {
+        gap: 10px;
+    }
+    
+    .nav_links-link {
+        font-size: 15px;
+    }
+
+    .boxes {
+        flex-wrap: wrap; /* Bloklar sig'masa pastga tushadi */
+    }
+
+    .boxes_box {
+        width: 50%; /* 2 tadan qator bo'lib chiqadi */
+    }
+
+    .news .container {
+        flex-direction: column; /* Rasm va matn ustma-ust tushadi */
+        gap: 15px;
+        padding-bottom: 20px;
+    }
+
+    .news-img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* --- 768px gacha bo'lgan ekranlar (Kichik planshetlar) --- */
+@media (max-width: 768px) {
+    .nav .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav_links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .container {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer_links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* --- 576px gacha bo'lgan ekranlar (Smartfonlar) --- */
+@media (max-width: 576px) {
+    .boxes_box {
+        width: 100%; /* Maqolalar bittadan to'liq qator bo'ladi */
+    }
+
+    header .container img {
+        width: 100%; /* Headerdagi banner rasmi */
+        height: auto;
+    }
+
+    .news_about-title {
+        font-size: 18px;
+    }
+
+    .news_about-text {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .nav_links-link, .footer_links-link {
+        font-size: 14px;
+    }
+
+    .logo-name, .footer-logo-title {
+        font-size: 16px;
+    }
+}
+
+/* --- 375px gacha (Juda kichik ekranlar) --- */
+@media (max-width: 375px) {
+    .nav_links {
+        gap: 8px;
+    }
+    
+    .nav_links-link {
+        font-size: 12px;
+    }
+}
